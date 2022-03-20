@@ -2,6 +2,6 @@
   <td id="line2"><%=programa.id%></td>
   <td id="line2"><%=programa.nombre%></td>
   <td id="line2">
-    <a href="" class="editar">Informacion</a>
+    <%= link_to 'mas informacion', area_programa_path(@area, programa), :class => 'btn btn-primary' %>
   </td>
 </tr>

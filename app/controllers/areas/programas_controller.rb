@@ -28,7 +28,7 @@ class Areas::ProgramasController < ApplicationController
   def create
     @programa = @area.programas.new(programa_params)
     if @programa.save 
-      redirect_to area_programa_url(@area, @programa)
+      redirect_to area_programas_url
     else
       render :new
     end

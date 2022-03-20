@@ -1,0 +1,30 @@
+<%= render 'layouts/navbar' %>
+
+<section class="menuArea">
+  <aside class="OpcionesArea">
+    <div class="LinkAreas" id="LinkAreas">
+      <i class="fa fa-home" aria-hidden="true" id="Icono"></i>
+      <%= link_to "Inicio", root_path, method: :get, class: "IndexArea"%>
+
+    </div>
+    <div class="LinkAreas" id="LinkAreas">
+      <i class="fa fa-plus-circle" aria-hidden="true" id="Icono"></i>
+      <%= link_to "Nuevo Area", new_area_path, method: :get, class:
+      "IndexArea"%>
+     
+    </div>
+  </aside>
+  <article class="Areas">
+    <table class="table">
+      <thead>
+        <tr>
+          <th id="nombreAreas">Area</th>
+        </tr>
+      </thead>
+      <tbody>
+       <%= render @areas %>
+      </tbody>
+    </table>
+  </article>
+</section>
+<%= render 'layouts/footer' %>

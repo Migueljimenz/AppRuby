@@ -1,0 +1,29 @@
+<%= render "layouts/navbar" %>
+
+<section id="IndexProgramasArea">
+  <aside class="AsideAreaProgramas">
+    <div class="LinkAreas" id="LinkAreas">
+      <i class="fa fa-chevron-circle-left" aria-hidden="true" id="Icono"></i>
+      <%= link_to "Regresar", areas_path, method: :get, class: "IndexArea"%>
+    </div>
+    <div class="LinkAreas" id="LinkAreas">
+      <i class="fa fa-plus-circle" aria-hidden="true" id="Icono"></i>
+      <%= link_to "Nuevo Programa", new_area_programa_url, method: :get, class:
+      "IndexArea"%>
+    </div>
+  </aside>
+  <table id="tablaProgramasArea">
+    <thead>
+      <tr id="headTable">
+        <td id="line1">Id</td>
+        <td id="line1">Programa</td>
+        <td id="line1">Opciones</td>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @programas %>
+    </tbody>
+  </table>
+</section>
+
+<%= render "layouts/footer" %>

@@ -1,7 +1,7 @@
 <tr id="bodyTable">
-  <td id="line2"><%=programa.id%></td>
-  <td id="line2"><%=programa.nombre%></td>
   <td id="line2">
-    <%= link_to 'mas informacion', area_programa_path(@area, programa), :class => 'btn btn-primary' %>
+    <button id="BotonArea">
+      <%= link_to programa.nombre, programa_cursos_url(programa),id:"linkBotonArea"%>
+    </button>
   </td>
 </tr>

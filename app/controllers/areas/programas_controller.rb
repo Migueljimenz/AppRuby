@@ -1,6 +1,6 @@
 class Areas::ProgramasController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_area 
+  before_action :set_area
 
   def index
     @programas = @area.programas

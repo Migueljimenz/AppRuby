@@ -24,6 +24,11 @@
   margin-top: 50px;
 }
 
+#titleProgramasArea{
+  margin-top: 50px;
+  text-align: center;
+}
+
 #headTable {
   border: 1px solid black;
   font-size: 30px;
@@ -46,7 +51,6 @@
 
 #line2 {
   padding: 10px;
-  border: 1px solid black;
   text-align: center;
   width: 100%;
 }

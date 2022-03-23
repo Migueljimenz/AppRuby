@@ -1,6 +1,8 @@
+
 <%= render "layouts/navbar" %>
 
-<h2 id="titleProgramasArea">Programas Area de <%= @area.nombreArea %></h2>
+<h2 id="titleProgramasArea">Fichas del <%= @programa.nombre %></h2>
+
 <section id="IndexProgramasArea">
   <aside class="AsideAreaProgramas">
     <div class="LinkAreas" id="LinkAreas">
@@ -9,18 +11,18 @@
     </div>
     <div class="LinkAreas" id="LinkAreas">
       <i class="fa fa-plus-circle" aria-hidden="true" id="Icono"></i>
-      <%= link_to "Nuevo Programa", new_area_programa_url, method: :get, class:
+      <%= link_to "Registrar ficha", new_programa_curso_url, method: :get, class:
       "IndexArea"%>
     </div>
   </aside>
   <table id="tablaProgramasArea">
     <thead>
       <tr id="headTable"> 
-        <td id="line1">Programa</td>
+        <td id="line1">Ficha</td>
       </tr>
     </thead>
     <tbody>
-      <%= render @programas %>
+      <%= render @cursos  %>
     </tbody>
   </table>
 </section>

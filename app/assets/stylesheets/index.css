@@ -41,12 +41,12 @@ header {
 }
 
 .nav__links li a:hover {
-  color: #0088a9;
+  color: orangered;
 }
 
 .cta {
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: orangered;
   border: none;
   border-radius: 50px;
   cursor: pointer;

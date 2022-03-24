@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   end
 
   resources :programas do
-    resources :cursos,module: :programas
+    resources :cursos, module: :programas
   end
 
   devise_scope :user do
